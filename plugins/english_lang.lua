@@ -11,7 +11,7 @@
 --                                              --
 --------------------------------------------------
 
-local LANG = 'en'
+local LANG = 'fa'
 
 local function run(msg, matches)
 	if permissions(msg.from.id, msg.to.id, "lang_install") then
@@ -27,48 +27,48 @@ local function run(msg, matches)
 		-------------
 
 		-- global plugins --
-		set_text(LANG, 'require_sudo', 'This plugin requires sudo privileges.')
-		set_text(LANG, 'require_admin', 'This plugin requires admin privileges or higher.')
-		set_text(LANG, 'require_mod', 'This plugin requires mod privileges or higher.')
+		set_text(LANG, 'require_sudo', 'فقط سودو قادر به انجام این کار میباشد')
+		set_text(LANG, 'require_admin', 'فقط برای ادمین و سودو')
+		set_text(LANG, 'require_mod', 'فقط برای مودراتور و بالاتر امکان پذیر است')
 
 		-- Spam.lua --
-		set_text(LANG, 'reportUser', 'USER')
-		set_text(LANG, 'reportReason', 'Report reason')
-		set_text(LANG, 'reportGroup', 'Group')
-		set_text(LANG, 'reportMessage', 'Message')
+		set_text(LANG, 'reportUser', 'کاربر')
+		set_text(LANG, 'reportReason', 'دلیل ریپورت')
+		set_text(LANG, 'reportGroup', 'گروه')
+		set_text(LANG, 'reportMessage', 'پیام')
 
-		set_text(LANG, 'allowedSpamT', 'Spam is now allowed in this chat.')
-		set_text(LANG, 'allowedSpamL', 'Spam is now allowed in this supergroup.')
-		set_text(LANG, 'notAllowedSpamT', 'Spam is not allowed in this chat.')
-		set_text(LANG, 'notAllowedSpamL', 'Spam is not allowed in this supergroup.')
+		set_text(LANG, 'allowedSpamT', 'اسپم در این سوپرگروه ازاد است)'
+		set_text(LANG, 'allowedSpamL', 'اسپم ازاد است ')
+		set_text(LANG, 'notAllowedSpamT', 'کسی قادر به اسپم در این گروه نیست')
+		set_text(LANG, 'notAllowedSpamL', 'کسی قادر به اسپم در این سوپر گروه نمیباشد')
 
 		-- bot.lua --
-		set_text(LANG, 'botOn', 'I\'m back. Let\'s do this')
-		set_text(LANG, 'botOff', 'Nothing to do here')
+		set_text(LANG, 'botOn', 'بات فعال است')
+		set_text(LANG, 'botOff', 'بات غیر فعال شد')
 
 		-- settings.lua --
 		set_text(LANG, 'user', 'User')
-		set_text(LANG, 'isFlooding', 'is flooding')
+		set_text(LANG, 'در حال اسپم است', 'در حال اسپم است')
 
-		set_text(LANG, 'noStickersT', 'Stickers are not allowed in this chat.')
-		set_text(LANG, 'noStickersL', 'Stickers are not allowed in this supergroup.')
-		set_text(LANG, 'stickersT', 'Stickers are now allowed in this chat.')
-		set_text(LANG, 'stickersL', 'Stickers are now allowed in this supergroup.')
+		set_text(LANG, 'noStickersT', 'استیکر ممنوع است')
+		set_text(LANG, 'noStickersL', 'استیکر ممنوع است')
+		set_text(LANG, 'stickersT', 'فرستادن استیکر ازاد است')
+		set_text(LANG, 'stickersL', 'فرستادن استیکر ازاد است')
 		
-		set_text(LANG, 'noTgservicesT', 'Telegram services muted in this chat.')
-		set_text(LANG, 'noTgservicesL', 'Telegram services muted in this supergroup.')
-		set_text(LANG, 'tgservicesT', 'Telegram services allowed in this chat.')
-		set_text(LANG, 'tgservicesL', 'Telegram services allowed in this supergroup.')
+		set_text(LANG, 'noTgservicesT', 'سرویس های تلگرام در حالت سکوت است')
+		set_text(LANG, 'noTgservicesL', 'سرویس های تلگرام در حالت سکوت است')
+		set_text(LANG, 'tgservicesT', 'سرویس های تلگرام ازاد است')
+		set_text(LANG, 'tgservicesL', 'سرویس های تلگرام ازاد است')
 		
-		set_text(LANG, 'LinksT', 'Links are now allowed in this chat.')
-		set_text(LANG, 'LinksL', 'Links are now allowed in this supergroup.')
-		set_text(LANG, 'noLinksT', 'Links are not allowed in this chat.')
-		set_text(LANG, 'noLinksL', 'Links are not allowed in this supergroup.')
+		set_text(LANG, 'LinksT', 'فرستادن لینک ازاد است')
+		set_text(LANG, 'LinksL', 'فرستادن لینک ازاد است')
+		set_text(LANG, 'noLinksT', 'فرستادن لینک ممنوع است')
+		set_text(LANG, 'noLinksL', 'فرستادن لینک ممنوع است')
 
-		set_text(LANG, 'gifsT', 'Gifs are now allowed in this chat.')
-		set_text(LANG, 'gifsL', 'Gifs are now allowed in this supergroup.')
-		set_text(LANG, 'noGifsT', 'Gifs are not allowed in this chat.')
-		set_text(LANG, 'noGifsL', 'Gifs are not allowed in this supergroup.')
+		set_text(LANG, 'gifsT', 'فرستادن تصویر های متحرک ازاد است')
+		set_text(LANG, 'gifsL', 'فرستادن تصویر های متحرک ازاد است')
+		set_text(LANG, 'noGifsT', 'فرستادن تصاویر متحرک ممنوع است')
+		set_text(LANG, 'noGifsL', 'فرستادن تصاویر متحرک ممنوع است')
 
 		set_text(LANG, 'photosT', 'Photos are now allowed in this chat.')
 		set_text(LANG, 'photosL', 'Photos are now allowed in this supergroup.')
@@ -359,32 +359,32 @@ local function run(msg, matches)
 		-- plugins.lua --
 		set_text(LANG, 'plugins:0', 4)
 		set_text(LANG, 'plugins:1', '#plugins: shows a list of all plugins.')
-		set_text(LANG, 'plugins:2', '#plugins <enable>/<disable> [plugin]: enable/disable the specified plugin.')
-		set_text(LANG, 'plugins:3', '#plugins <enable>/<disable> [plugin] chat: enable/disable the specified plugin, only in the current group/supergroup.')
-		set_text(LANG, 'plugins:4', '#plugins reload: reloads all plugins.')
+		set_text(LANG, 'plugins:2', '#plugins <enable>/<disable> [plugin]: فعال/غیرفغال کردن پلاگین مورد نظر ')
+		set_text(LANG, 'plugins:3', '#plugins <enable>/<disable> [plugin] chat: فعال/غیرفعال کردن پلاگین مورد نظر در این گروه/سوپرگروه')
+		set_text(LANG, 'plugins:4', '#plugins reload: ریلود کردن پلاگین ها')
 
 		-- version.lua --
 		set_text(LANG, 'version:0', 1)
-		set_text(LANG, 'version:1', '#version: shows bot version.')
+		set_text(LANG, 'version:1', '#version: نشان دادن ورژن ربات')
 
 		-- rules.lua --
 		set_text(LANG, 'rules:0', 1)
-		set_text(LANG, 'rules:1', '#rules: shows channel rules.')
+		set_text(LANG, 'rules:1', '#rules: نشان دادن قوانین')
 
 		if matches[1] == 'install' then
-			return 'ℹ️ English was successfully installed on your bot.'
+			return 'ℹ️زبان فارسی با موفقیت نصب شد.'
 		elseif matches[1] == 'update' then
-			return 'ℹ️ English was successfully updated on your bot.'
+			return 'ℹ️زبان فارسی با موفقیت نصب شد.'
 		end
 	else
-		return "🚫 This plugin requires sudo privileged user."
+		return "🚫 این پلاگین به دسترسی سودو نیازمند است"
 	end
 end
 
 return {
 	patterns = {
-		'[!/#](install) (english_lang)$',
-		'[!/#](update) (english_lang)$'
+		'[!/#](install) (persian_lang)$',
+		'[!/#](update) (persian_lang)$'
 	},
 	run = run
 }
